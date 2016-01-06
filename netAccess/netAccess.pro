@@ -13,10 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    libnetaccess.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    libnetaccess.h
 
 FORMS    += mainwindow.ui
 
 LIBS    +=  -lcurl
+
+CONFIG += c++11
